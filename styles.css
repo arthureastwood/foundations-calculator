@@ -3,8 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    box-sizing: border-box;
 }
 
 button {
@@ -20,7 +19,7 @@ button {
 }
 
 .number{
-    border: 1px solid greenyellow;
+    background-color: gray;
 }
 
 .number:hover{
@@ -28,7 +27,7 @@ button {
 }
 
 .operator{
-    border: 1px solid steelblue;
+    background-color: blue;
 }
 
 .operator:hover{
@@ -36,7 +35,7 @@ button {
 }
 
 .decimal{
-    border: 1px solid goldenrod;
+    background-color:  goldenrod;
 }
 
 .decimal:hover{
@@ -44,7 +43,7 @@ button {
 }
 
 .equal{
-    border: 1px solid pink;
+    background-color:  pink;
 }
 
 .equal:hover{
@@ -52,11 +51,11 @@ button {
 }
 
 .clear{
-    border: 1px solid violet;
+    background-color: green;
 }
 
 .clear:hover{
-    background-color: palevioletred;
+    background-color: greenyellow;
 }
 
 .first-row{
@@ -67,12 +66,32 @@ button {
 }
 
 .screen{
-    width: 300px;
+    width: 400px;
     height: 75px;
     border: 1px solid salmon;
+    border-radius: 8px;
     margin: 15px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+    background-color: white;
+}
+
+.previous{
+    font-size: 15px;
+}
+
+.current{
+    font-size: 50px;
+}
+
+.clear-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator{
+    background-color: black;
+    border-radius: 10px;
 }
